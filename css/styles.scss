@@ -1,0 +1,55 @@
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-gray--light: hsl(212, 45%, 89%);
+  --color-blue--grayish: hsl(219, 15%, 55%);
+  --color-blue--grayish-shadow: hsla(219, 15%, 55%, 0.3);
+  --color-blue--dark: hsl(218, 44%, 22%);
+  --font-family:'Outfit', sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    background: var(--color-gray--light);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: var(--font-family);
+    gap: 1rem;
+}
+
+.card{
+    background: var(--color-white);
+    border-radius: 18px;
+    width: 300px;
+    padding: 1rem;
+    box-shadow: 4px 8px 20px 1px var(--color-blue--grayish-shadow);
+    text-align: center;
+    .card_header{
+        .card_header-img{
+            width: 100%;
+            img{
+                border-radius: 10px;
+                width: 100%;
+            }
+        }
+    }
+    .card_footer{
+        padding: .2rem;
+        .card_footer-title{
+            font-size: 1.3em;
+            color: var(--color-blue--dark);
+            padding: 1rem 0;
+        }
+        .card_footer-description{
+            font-size: 15px;
+            color: var(--color-blue--grayish);
+            padding-bottom: 1rem;
+        }
+    }
+}
